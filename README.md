@@ -2,4 +2,4 @@
 Hey It's My Portfolio websites.
 
 
-Link: jaiminmalaviya.com
+Link: https://jaiminmalaviya.netlify.app/
