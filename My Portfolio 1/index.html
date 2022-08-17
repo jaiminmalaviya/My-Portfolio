@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JM - Portfolio</title>
+
+    <!-------------- Fonts -------------->
+    <link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet'>
+
+    <!-------------- Bootstrap CSS -------------->
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+
+    <!-------------- Scroll SCSS -------------->
+    <link rel="stylesheet" href="CSS/scroll.css">
+
+    <!-------------- Custom CSS -------------->
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+
+    <!-------------- Navbar -------------->
+    <header>
+        <nav class="navbar navbar-expand-md bg-1 fixed-top py-3 px-5 d-none d-md-flex nav-blur-12">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="Images/logo.svg" alt="Logo" width="50"></a>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <a class="navbar-brand" href="#"><img src="Images/logo.svg" alt="Logo" width="50"></a>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item mx-4">
+                                <a class="nav-link custom-nav-link" href="#about">About</a>
+                            </li>
+                            <li class="nav-item mx-4">
+                                <a class="nav-link custom-nav-link" href="#portfolio">Portfolio</a>
+                            </li>
+                            <li class="nav-item mx-4">
+                                <a class="nav-link custom-nav-link" href="#contact">Contact</a>
+                            </li>
+                            <li class="nav-item ms-4">
+                                <a class="btn btn-outline-light border-2" href="Resume.pdf" target="_blank">Resume</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-------------- Navbar - Mobile View -------------->
+        <div class="mob-navbar-anime mob-navbar-anime-remove"></div>
+        <nav class="navbar fixed-top py-3 px-4 d-flex d-md-none mob-navbar nav-blur-12">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="Images/logo.svg" alt="Logo" width="50"></a>
+                <button class="navbar-toggler border-0 hamburger-lines navbar-toggler-icon" type="button">
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                    <span class="line line3"></span>
+                </button>
+            </div>
+        </nav>
+        <div class="mob-navbar-menu mob-navbar-menu-remove">
+            <div class="row text-center mb-2">
+                <a class="navbar-toggler-link" href="#home">Home</a>
+                <a class="navbar-toggler-link" href="#about">About</a>
+                <a class="navbar-toggler-link" href="#portfolio">Portfolio</a>
+                <a class="navbar-toggler-link" href="#contact">Contact</a>
+                <a class="navbar-toggler-link" href="Resume.pdf" target="_blank">Resume</a>
+            </div>
+        </div>
+    </header>
+
+
+    <main class="main main-section-toggle-remove">
+
+        <!-------------- Home page -------------->
+        <div class="bg-1">
+            <section id="home" class="container-md d-flex align-items-center justify-content-center position-relative">
+                <div class="home-inner text-center">
+                    <h1>Hey, I'm Jaimin Malaviya</h1>
+                    <h4>A Web Developer in training.</h4>
+                </div>
+                <div class="scroll-arrow">
+                    <a href="#about" class="d-block" style="width: 50px; height: 100px;">
+                        <div class="scroll-div">
+                            <div class="chevron"></div>
+                            <div class="chevron"></div>
+                            <div class="chevron"></div>
+                        </div>
+                    </a>
+                </div>
+            </section>
+        </div>
+
+        <!-------------- Social Links -------------->
+        <div class="home-socials d-md-block d-none">
+            <div class="home-social">
+                <a href="https://github.com/jaiminmalaviya" class="home-social-icon-link" rel="noreferrer"
+                    target="_blank">
+                    <img src="Images/s-github.svg" alt="JaiminMalaviya Github Profile" class="home-social-icon-static"
+                        width="32">
+                    <img src="Images/s-github.gif" alt="JaiminMalaviya Github Profile" class="home-social-icon"
+                        width="32">
+                </a>
+            </div>
+            <div class="home-social">
+                <a href="https://www.linkedin.com/in/jaimin-malaviya-94b543218/" class="home-social-icon-link"
+                    rel="noreferrer" target="_blank">
+                    <img src="Images/s-linkedin.svg" alt="JaiminMalaviya linkedin Profile"
+                        class="home-social-icon-static" width="34" style="left: 0;">
+                    <img src="Images/s-linkedin.gif" alt="JaiminMalaviya linkedin Profile" class="home-social-icon"
+                        width="34">
+                </a>
+            </div>
+            <div class="home-social">
+                <a href="https://twitter.com/JaiminMalaviya2" class="home-social-icon-link" rel="noreferrer"
+                    target="_blank">
+                    <img src="Images/s-twitter.svg" alt="JaiminMalaviya Twitter Profile" class="home-social-icon-static"
+                        width="32">
+                    <img src="Images/s-twitter.gif" alt="JaiminMalaviya Twitter Profile" class="home-social-icon"
+                        width="32">
+                </a>
+            </div>
+            <div class="home-social">
+                <a href="https://www.instagram.com/jaimin._02/" class="home-social-icon-link" rel="noreferrer"
+                    target="_blank">
+                    <img src="Images/s-instagram.svg" alt="JaiminMalaviya Instagram Profile"
+                        class="home-social-icon-static" width="32">
+                    <img src="Images/s-instagram.gif" alt="JaiminMalaviya Instagram Profile" class="home-social-icon"
+                        width="32">
+                </a>
+            </div>
+            <div class="home-social">
+                <a href="https://wa.link/7l3ziq" class="home-social-icon-link" rel="noreferrer" target="_blank">
+                    <img src="Images/s-whatsapp.svg" alt="JaiminMalaviya Whatsapp Messenger"
+                        class="home-social-icon-static" width="30" style="left: 2px;">
+                    <img src="Images/s-whatsapp.gif" alt="JaiminMalaviya Whatsapp Messenger" class="home-social-icon"
+                        width="30">
+                </a>
+            </div>
+        </div>
+
+        <!-------------- About page -------------->
+        <div class="bg-2">
+            <section id="about" class="container-md">
+                <div class="about-inner d-flex flex-column align-items-center">
+                    <div class="sketchy">About me</div>
+                    <div class="row my-5 justify-content-between about-cont">
+                        <p
+                            class="col-md-6 col-sm-10 text-center text-md-start m-md-0 m-auto order-md-0 order-1 about-text">
+                            Hello! My name is
+                            <span>Jaimin
+                                Malaviya</span>
+                            and I'm a<span> Frontend Web Developer</span> building the Front-end of Websites and Web
+                            Applications that leads to the success of the overall product. Check out some of my work in
+                            the <span> Portfolio </span>section. I'm open to <span>Job opportunities</span> where I can
+                            contribute, learn and grow. If you have a good opportunity that matches my skills and
+                            experience then don't hesitate to <span> Contact me.</span>
+                        </p>
+                        <div class="col-md-5 order-md-1 order-0 d-flex justify-content-center mb-md-0 mb-4 ">
+                            <img src="Images/avatar.png" alt="Avatar" class="img-avatar">
+                        </div>
+                    </div>
+
+                    <div class="skills-inner w-100 d-flex flex-column mb-5 align-items-center">
+                        <div class="sketchy mt-5 ">My Skills</div>
+                        <div class="skills">
+                            <div class="skill">
+                                <h6 class="skill-name">HTML</h6>
+                                <div class="skill-bar">
+                                    <div class="skill-per" per="90%" style="max-width:90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class="skill-name">CSS</div>
+                                <div class="skill-bar">
+                                    <div class="skill-per" per="70%" style="max-width:70%"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class="skill-name">Bootstrap</div>
+                                <div class="skill-bar">
+                                    <div class="skill-per" per="70%" style="max-width:70%"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class="skill-name">Javascript</div>
+                                <div class="skill-bar">
+                                    <div class="skill-per" per="60%" style="max-width:60%"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class="skill-name">Java Programming</div>
+                                <div class="skill-bar">
+                                    <div class="skill-per" per="50%" style="max-width:50%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="#portfolio" class="mt-5 d-flex align-items-center scroll-portfolio-link">
+                        <h3 class="m-0 me-3">Check out my Work</h3>
+                        <div class="center-scroll">
+                            <div class="round">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </section>
+        </div>
+
+        <!-------------- Portfolio page -------------->
+        <div class="bg-1">
+            <section id="portfolio" class="container-md">
+                <div class="portfolio-inner d-flex flex-column align-items-center m-auto">
+                    <div class="sketchy">My Portfolio</div>
+
+                    <div class="row justify-content-center mt-4">
+                        <div class="col-lg-6 col-md-9 col-sm-10 col-12 p-lg-4 p-2">
+                            <div class="proj-item">
+                                <div class="proj-img">
+                                    <img src="https://images.unsplash.com/photo-1496492352121-593138d42a61?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3542849cc0459345e3aa82a90ae51a01&auto=format&fit=crop&w=1350&q=80"
+                                        alt="">
+                                    <div class="proj-link row flex-column text-center">
+                                        <a href="#" class="col-6 p-2 my-2 border border-2 border-white">
+                                            View Source
+                                            <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24"
+                                                fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="feather feather-github">
+                                                <title>GitHub</title>
+                                                <path
+                                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                                </path>
+                                            </svg>
+                                        </a>
+                                        <a href="#" class="col-6 p-2 my-2 border border-2 border-white">
+                                            Try It Live
+                                            <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24"
+                                                fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="feather feather-external-link">
+                                                <title>External Link</title>
+                                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6">
+                                                </path>
+                                                <polyline points="15 3 21 3 21 9"></polyline>
+                                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="proj-info p-3">
+                                    <h3>E-commerce Website</h3>
+                                    <div class="proj-category">
+                                        <h6>Web Development</h6>
+                                    </div>
+                                    <div class="proj-lang">
+                                        <span>Next.js</span>
+                                        <span>Tailwind</span>
+                                        <span>Firebase</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-9 col-sm-10 col-12 p-lg-4 p-2">
+                            <div class="proj-item">
+                                <div class="proj-img">
+                                    <img src="https://images.unsplash.com/photo-1508124780861-b1687f9a13e5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=f841d43a63c085e930aa5b6b33e89a9f&auto=format&fit=crop&w=1385&q=80"
+                                        alt="">
+                                    <div class="proj-link row flex-column text-center">
+                                        <a href="#" class="col-6 p-2 my-2 border border-2 border-white">
+                                            View Source
+                                            <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24"
+                                                fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="feather feather-github">
+                                                <title>GitHub</title>
+                                                <path
+                                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                                </path>
+                                            </svg>
+                                        </a>
+                                        <a href="#" class="col-6 p-2 my-2 border border-2 border-white">
+                                            Try It Live
+                                            <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24"
+                                                fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="feather feather-external-link">
+                                                <title>External Link</title>
+                                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6">
+                                                </path>
+                                                <polyline points="15 3 21 3 21 9"></polyline>
+                                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="proj-info p-3">
+                                    <h3>E-commerce Website</h3>
+                                    <div class="proj-category">
+                                        <h6>Web Development</h6>
+                                    </div>
+                                    <div class="proj-lang">
+                                        <span>Next.js</span>
+                                        <span>Tailwind</span>
+                                        <span>Firebase</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-9 col-sm-10 col-12 p-lg-4 p-2">
+                            <div class="proj-item">
+                                <div class="proj-img">
+                                    <img src="https://images.unsplash.com/photo-1515215676803-119c88d493cf?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=baf00747bfb9fe41ad9af8cf00dbebbf&auto=format&fit=crop&w=1350&q=80"
+                                        alt="">
+                                    <div class="proj-link row flex-column text-center">
+                                        <a href="#" class="col-6 p-2 my-2 border border-2 border-white">
+                                            View Source
+                                            <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24"
+                                                fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="feather feather-github">
+                                                <title>GitHub</title>
+                                                <path
+                                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                                </path>
+                                            </svg>
+                                        </a>
+                                        <a href="#" class="col-6 p-2 my-2 border border-2 border-white">
+                                            Try It Live
+                                            <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24"
+                                                fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="feather feather-external-link">
+                                                <title>External Link</title>
+                                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6">
+                                                </path>
+                                                <polyline points="15 3 21 3 21 9"></polyline>
+                                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="proj-info p-3">
+                                    <h3>E-commerce Website</h3>
+                                    <div class="proj-category">
+                                        <h6>Web Development</h6>
+                                    </div>
+                                    <div class="proj-lang">
+                                        <span>Next.js</span>
+                                        <span>Tailwind</span>
+                                        <span>Firebase</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-9 col-sm-10 col-12 p-lg-4 p-2">
+                            <div class="proj-item">
+                                <div class="proj-img">
+                                    <img src="https://images.unsplash.com/photo-1496939217462-7d42e9a74f0e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=5e3be993a88feed38e4f5374ff3ba115&auto=format&fit=crop&w=1350&q=80g"
+                                        alt="">
+                                    <div class="proj-link row flex-column text-center">
+                                        <a href="#" class="col-6 p-2 my-2 border border-2 border-white">
+                                            View Source
+                                            <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24"
+                                                fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="feather feather-github">
+                                                <title>GitHub</title>
+                                                <path
+                                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                                </path>
+                                            </svg>
+                                        </a>
+                                        <a href="#" class="col-6 p-2 my-2 border border-2 border-white">
+                                            Try It Live
+                                            <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24"
+                                                fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="feather feather-external-link">
+                                                <title>External Link</title>
+                                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6">
+                                                </path>
+                                                <polyline points="15 3 21 3 21 9"></polyline>
+                                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="proj-info p-3">
+                                    <h3>E-commerce Website</h3>
+                                    <div class="proj-category">
+                                        <h6>Web Development</h6>
+                                    </div>
+                                    <div class="proj-lang">
+                                        <span>Next.js</span>
+                                        <span>Tailwind</span>
+                                        <span>Firebase</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-------------- Contact page -------------->
+        <div class="bg-2">
+            <section id="contact" class="container-md">
+                <div class="contact-inner d-flex flex-column align-items-center m-auto">
+                    <div class="sketchy">Contact Me</div>
+                    <div class="contact-form mt-5 row justify-content-center">
+                        <div class="col-xl-4 col-lg-5 col-sm-10 contact-left ">
+                            <h1 class="fw-bolder mb-1">Let's get in touch</h1>
+                            <p>Feel free to Contact me by submitting the form below, my inbox is always open. Whether
+                                you have a question or just want to say hi, I’ll try my best to get back to you!</p>
+                            <div class="px-xl-3 py-3">
+                                <div class="d-flex align-items-center m-2">
+                                    <div class="contact-icon col-auto">
+                                        <img src="Images/location.svg" alt="">
+                                    </div>
+                                    <div class="col"><span>Address: </span>B-49, Laxminarayan Society, A. K. Road,
+                                        Varachha, Surat,
+                                        Gujarat, India </div>
+                                </div>
+                                <div class="d-flex align-items-center m-2">
+                                    <div class="contact-icon col-auto">
+                                        <img src="Images/phone.svg" alt="">
+                                    </div>
+                                    <div class="col"><span>Phone: </span>+91 97262 49174 </div>
+                                </div>
+                                <div class="d-flex align-items-center m-2">
+                                    <div class="contact-icon col-auto">
+                                        <img src="Images/mail.svg" alt="">
+                                    </div>
+                                    <div class="col"><span>Email: </span>jaiminmalviya56.jm@gmail.com</div>
+                                </div>
+                                <div class="d-flex align-items-center m-2">
+                                    <div class="contact-icon col-auto">
+                                        <img src="Images/github.svg" alt="" width="22">
+                                    </div>
+                                    <div class="col"><span>Website: </span><a
+                                            href="jaimin-malaviya.com">jaimin-malaviya.com</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <form action="#" class="col-xl-4 col-lg-5 col-sm-10 contact-right">
+                            <input class="w-100" type="text" placeholder="Name*">
+                            <input class="w-100" type="text" placeholder="Subject*">
+                            <input class="w-100" type="email" placeholder="Mail*">
+                            <textarea class="w-100" name="message" id="" cols="30" rows="5"
+                                placeholder="Message*"></textarea>
+                            <button class="btn float-start">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-------------- Footer -------------->
+        <footer class="main-footer">
+            <div class="container px-sm-5">
+                <div class="main-footer-upper row justify-content-between">
+                    <div class="col-md-auto order-md-1 mb-md-0 mb-5 ms-md-5 main-footer-row-1">
+                        <h2>Social</h2>
+                        <div class="main-footer-social-cont">
+                            <a target="_blank" rel="noreferrer" href="https://github.com/jaiminmalaviya">
+                                <img src="Images/s-github-w.svg" alt="JaiminMalaviya Github Profile"
+                                    class="main-footer-icon">
+                            </a>
+                            <a target="_blank" rel="noreferrer"
+                                href="https://www.linkedin.com/in/jaimin-malaviya-94b543218/">
+                                <img src="Images/s-linkedin-w.svg" alt="JaiminMalaviya linkedin Profile"
+                                    class="main-footer-icon">
+                            </a>
+                            <a target="_blank" rel="noreferrer" href="https://twitter.com/JaiminMalaviya2">
+                                <img src="Images/s-twitter-w.svg" alt="JaiminMalaviya Twitter Profile"
+                                    class="main-footer-icon">
+                            </a>
+
+                            <a target="_blank" rel="noreferrer" href="https://www.instagram.com/jaimin._02/">
+                                <img src="Images/s-instagram-w.svg" alt="JaiminMalaviya Instagram Profile"
+                                    class="main-footer-icon">
+                            </a>
+                            <a target="_blank" rel="noreferrer" href="https://wa.link/7l3ziq">
+                                <img src="Images/s-whatsapp-w.svg" alt="JaiminMalaviya Whatsapp Messenger"
+                                    class="home-social-icon-static">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col order-md-0 main-footer-row-2">
+                        <h2>Jaimin Malaviya</h2>
+                        <p>
+                            A Frontend focused Web Developer building the Frontend of Websites
+                            and Web Applications that leads to the success of the overall
+                            product
+                        </p>
+                    </div>
+                </div>
+
+                <!-- If you give me some credit or shoutout here by linking to my website, then it will be a big thing for me and will help me a lot :) -->
+                <div class="main-footer-lower">
+                    © Copyright
+                    <script>document.write(new Date().getFullYear())</script>. Made by
+                    <a rel="noreferrer" target="_blank" href="index.html">Jaimin Malaviya</a>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+
+
+    <!-------------- Bootstrap JS -------------->
+    <script src="Javascript/bootstrap.min.js"></script>
+
+    <!-------------- Jquery JS -------------->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+    <!-------------- Custom JS -------------->
+    <script src="Javascript/script.js"></script>
+
+</body>
+
+</html>
