@@ -587,7 +587,7 @@ main {
 
 .proj-item {
   padding: 8px;
-  font-family: "Just Another Hand", cursive;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   border: 3px solid #333333;
   border-radius: 2% 6% 5% 4% / 1% 1% 2% 4%;
   letter-spacing: 0.5px;
