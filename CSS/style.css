@@ -640,7 +640,8 @@ main {
 .proj-category,
 .proj-img img {
   transform: translateY(0px);
-  transition: all cubic-bezier(0.4, 0, 0.2, 1) 0.4s;
+  transition-property: transform, opacity;
+  transition-duration: 0.4s;
 }
 
 .proj-lang {
@@ -648,6 +649,7 @@ main {
   bottom: 0;
   width: 88%;
   opacity: 0;
+  transform: translateY(100px);
 }
 
 .proj-info h6,
@@ -690,12 +692,14 @@ main {
 
 .proj-item:hover .proj-lang {
   opacity: 1;
-  transform: translateY(-20px);
+  transform: translateY(0px);
+  position: relative;
 }
 
 .proj-item:hover .proj-category {
   opacity: 0;
   transform: translateY(-20px);
+  position: absolute;
 }
 
 .proj-item:hover .proj-img img {
