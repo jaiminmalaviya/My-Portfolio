@@ -492,11 +492,11 @@
                                 </div>
                             </div>
                         </div>
-                        <form name="contact" class="col-xl-4 col-lg-5 col-sm-10 contact-right" netlify>
-                            <input class="w-100" type="text" placeholder="Name*">
-                            <input class="w-100" type="text" placeholder="Subject*">
-                            <input class="w-100" type="email" placeholder="Mail*">
-                            <textarea class="w-100" name="message" id="" cols="30" rows="5"
+                        <form name="contact" class="col-xl-4 col-lg-5 col-sm-10 contact-right" method="POST" data-netlify="true">
+                            <input class="w-100" type="text" name="name" placeholder="Name*">
+                            <input class="w-100" type="text" name="sunject" placeholder="Subject*">
+                            <input class="w-100" type="email" name="email" placeholder="Mail*">
+                            <textarea class="w-100" name="message"
                                 placeholder="Message*"></textarea>
                             <button class="btn float-start">Submit</button>
                         </form>
