@@ -412,6 +412,7 @@ main {
   color: var(--secondary-color);
   font-weight: 500;
   position: relative;
+  display: inline-block;
 }
 
 .about-text span::after {
